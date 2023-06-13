@@ -6,7 +6,7 @@
     $captcha = $_POST['captcha']?? false;
     if ($pswd) $pswd = md5($pswd);
 
-	if ($login && $pswd && $captcha) {
+    if ($login && $pswd && $captcha) {
         if (!Captcha::check($captcha)) echo 'Не такой код';
         else {
             $user_data = new UserData();
