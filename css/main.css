@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    padding: 10px;
+}
+
+.flex_column {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+h1,
+.logout {
+    font-size: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#auth {
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content) 180px;
+    grid-template-areas:
+        "login_label login_input"
+        "pswd_label pswd_input"
+        ". captcha_img"
+        "captcha_label captcha_input"
+        "submit_btn error_text";
+    align-items: center;
+    gap: 8px;
+}
+
+.login_label {
+    grid-area: login_label;
+}
+
+.login_input {
+    grid-area: login_input;
+}
+
+.pswd_label {
+    grid-area: pswd_label;
+}
+
+.pswd_input {
+    grid-area: pswd_input;
+}
+
+.captcha_img {
+    grid-area: captcha_img;
+}
+
+.captcha_label {
+    grid-area: captcha_label;
+}
+
+.captcha_input {
+    grid-area: captcha_input;
+}
+
+#error_text {
+    font-size: 80%;
+    color: red;
+    opacity: 0;
+    transition: 2s;
+    grid-area: error_text;
+}
+
+#error_text.active {
+    opacity: 1;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 180px;
+}
+
+input[type="submit"] {
+    padding: 5px;
+    width: 100px;
+    grid-area: submit_btn;
+}
+
+#auth_success {
+    font-size: 12px;
+    position: fixed;
+    background-color: lightgreen;
+    border: 1px solid green;
+    border-radius: 2px;
+    padding: 4px;
+    top: 10px;
+    transform: translateY(-150%);
+    transition: 2s;
+}
+
+#auth_success.active {
+    transform: translateY(0);
+}
+
+#display_none {
+    display: none;
+}
+
+.flex_block {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5px 0;
+}
+
+.flex_end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.align_top {
+    align-items: flex-start;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.align_bottom {
+    align-items: flex-end;
+}
+
+.margin_bottom {
+    margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+.user_data p span {
+    white-space: nowrap;
+}
+
+.user_photo {
+    max-width: 100%;
+}
+
+.captcha {
+    justify-self: start;
+}
