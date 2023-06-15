@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 13 2023 г., 02:33
+-- Время создания: Июн 15 2023 г., 12:36
 -- Версия сервера: 5.7.33
 -- Версия PHP: 7.1.33
 
@@ -54,7 +54,10 @@ INSERT INTO `test_users` (`id`, `name`, `login`, `password`, `birthday`, `img_pa
 --
 ALTER TABLE `test_users`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `login` (`login`);
+  ADD UNIQUE KEY `login` (`login`),
+  ADD UNIQUE KEY `login_2` (`login`,`password`),
+  ADD KEY `birthday` (`birthday`),
+  ADD KEY `name` (`name`);
 
 --
 -- AUTO_INCREMENT для сохранённых таблиц
@@ -64,7 +67,7 @@ ALTER TABLE `test_users`
 -- AUTO_INCREMENT для таблицы `test_users`
 --
 ALTER TABLE `test_users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
