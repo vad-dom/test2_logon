@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
         request.open("POST", url, true);
         request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-        /* один из способов защиты от брутфорса */
-        /* задержка незаметна для пользователя, но сильно замедляет подбор логина и пароля */
+        // один из способов защиты от брутфорса
+        // задержка незаметна для пользователя, но сильно замедляет подбор логина и пароля
         setTimeout(() => request.send(params), 100);
 
         request.addEventListener("readystatechange", () => {

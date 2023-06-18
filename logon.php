@@ -1,6 +1,9 @@
 <?php
     require_once 'settings.php';
 
+    // по-хорошему, нужно было сделать класс с методами logon и logout
+    // для упрощения это опущено
+    // плюс, в задании было требование о минимальном количестве файлов
     $login = $_POST['login']?? false;
     $pswd = $_POST['pswd']?? false;
     $captcha = $_POST['captcha']?? false;
