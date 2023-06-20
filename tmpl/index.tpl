@@ -10,6 +10,5 @@
         <input class="captcha_input" type="text" name="captcha" id="captcha" maxlength="4" required>
         <input type="submit" name="submit" value="Войти">
         <p id="error_text"></p>
-        </div>
     </form>
 </div>

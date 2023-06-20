@@ -9,9 +9,8 @@
             $this->meta_desc = 'Тестовая авторизация пользователя';
             $this->meta_keywords = 'тест, авторизация, пользователь';
 
-            $ds = DIRECTORY_SEPARATOR;
-            $this->params['css_file'] = 'css'.$ds.'main.css';
-            $this->params['js_file'] = '..'.$ds.'js'.$ds.'event_handlers.js';
+            $this->params['css_file'] = 'css/main.css';
+            $this->params['js_file'] = '../js/event_handlers.js';
 
             session_start();
             if (isset($_SESSION['user_data'])) {

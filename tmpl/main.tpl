@@ -10,14 +10,12 @@
         <script type="text/javascript" src="<?=$js_file?>" defer></script>
     </head>
 
-    <body class="flex_container">
+    <body>
         <header>
         </header>
 
         <main>
-            <div class="content">
-                <?=$content?>
-            </div>
+            <?=$content?>
         </main>
 
         <footer>

@@ -9,9 +9,8 @@
             $this->meta_desc = 'Вывод информации о пользователе после авторизации';
             $this->meta_keywords = 'информация, пользователь';
 
-            $ds = DIRECTORY_SEPARATOR;
-            $this->params['css_file'] = 'css'.$ds.'main.css';
-            $this->params['js_file'] = '..'.$ds.'js'.$ds.'auth_success.js';
+            $this->params['css_file'] = 'css/main.css';
+            $this->params['js_file'] = '../js/auth_success.js';
 
             session_start();
             if (!isset($_SESSION['user_data'])) {
