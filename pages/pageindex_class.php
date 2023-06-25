@@ -5,7 +5,7 @@
         public function __construct()
         {
             parent::__construct();
-            $this->title = 'Авторизация Тест';
+            $this->title = 'Тестовая авторизация';
             $this->meta_desc = 'Тестовая авторизация пользователя';
             $this->meta_keywords = 'тест, авторизация, пользователь';
 

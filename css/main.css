@@ -9,8 +9,24 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    padding: 5px;
+    display: grid;
+}
+
 .wrapper {
+    margin: 0 auto;
     padding: 10px;
+}
+
+#logon {
+    background-color: #cbecff;
+}
+
+#user_data_wrapper {
+    position: relative;
+    border: 1px solid #000;
+    overflow: hidden;
 }
 
 .flex_column {
@@ -95,7 +111,7 @@ input[type="submit"] {
 
 #auth_success {
     font-size: 12px;
-    position: fixed;
+    position: absolute;
     background-color: lightgreen;
     border: 1px solid green;
     border-radius: 2px;
@@ -123,14 +139,6 @@ input[type="submit"] {
 .flex_end {
     display: flex;
     justify-content: flex-end;
-}
-
-.align_top {
-    align-items: flex-start;
-}
-
-.align_center {
-    align-items: center;
 }
 
 .align_bottom {

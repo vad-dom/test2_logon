@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div id="logon" class="wrapper flex_column">
     <h1>Тестовая авторизация</h1>
     <form id="auth" name="auth" method="post">
         <label class="login_label" for="login">Логин: </label>

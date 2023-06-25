@@ -43,7 +43,8 @@
         
         public static function check($code) {
             if (!session_id()) session_start();
-            return $code === $_SESSION['code'];
+            $session_code = $_SESSION['code']?? false;
+            return $code === $session_code;
         }
         
     }

@@ -1,4 +1,4 @@
-<div class="wrapper flex_column">
+<div id="user_data_wrapper" class="wrapper flex_column">
     <div id="<?=$auth_success?>">
         Мы успешно авторизовались
     </div>
